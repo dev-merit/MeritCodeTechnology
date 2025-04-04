@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial astro-GGT7YLBK">
+
+<head>
+    <!-- Global Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Astro v1.0.6">
+
+    <link rel="icon" href="favicon.png">
+
+    <link rel="sitemap" href="sitemap.xml">
+
+    <!-- Preload Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Scrollable a11y code helper -->
+    <script src="make-scrollable-code-focusable.js">
+    </script>
+
+    <!-- This is intentionally inlined to avoid FOUC -->
+    <script>
+        const root = document.documentElement;
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            root.classList.add('theme-dark');
+        } else {
+            root.classList.remove('theme-dark');
+        }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+
+    <!-- Page Metadata -->
+    <link rel="canonical" href="http://astro.build/installation">
+
+    <!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+
+    <title>
+        Installation 🚀 Documentation for CyberTools
+    </title>
+
+    <link rel="stylesheet" href="assets/important-notes-installation-introduction-tools-translation.e4ac4ef5.css" />
+</head>
+
+<body class="astro-GGT7YLBK">
+    <header class="astro-VASKBSTH">
+        <a href="#article" class="sr-only focus:not-sr-only skiplink astro-DGYJY3T3"><span class="astro-DGYJY3T3">Skip to Content</span></a>
+
+
+        <nav class="nav-wrapper astro-VASKBSTH" title="Top Navigation">
+            <div class="menu-toggle astro-VASKBSTH">
+                <style>
+                    astro-island,
+                    astro-slot {
+                        display: contents
+                    }
+                </style>
+                <script>
+                    (self.Astro = self.Astro || {}).idle = a => {
+                        const e = async() => {
+                            await (await a())()
+                        };
+                        "requestIdleCallback" in window ? window.requestIdleCallback(e) : setTimeout(e, 200)
+                    };
+                    var a; {
+                        const l = {
+                                0: t => t,
+                                1: t => JSON.parse(t, n),
+                                2: t => new RegExp(t),
+                                3: t => new Date(t),
+                                4: t => new Map(JSON.parse(t, n)),
+                                5: t => new Set(JSON.parse(t, n)),
+                                6: t => BigInt(t),
+                                7: t => new URL(t)
+                            },
+                            n = (t, r) => {
+                                if (t === "" || !Array.isArray(r)) return r;
+                                const [s, i] = r;
+                                return s in l ? l[s](i) : void 0
+                            };
+                        customElements.get("astro-island") || customElements.define("astro-island", (a = class extends HTMLElement {
+                            constructor() {
+                                super(...arguments);
+                                this.hydrate = () => {
+                                    if (!this.hydrator || this.parentElement ? .closest("astro-island[ssr]")) return;
+                                    const r = this.querySelectorAll("astro-slot"),
+                                        s = {},
+                                        i = this.querySelectorAll("template[data-astro-template]");
+                                    for (const e of i) !e.closest(this.tagName) ? .isSameNode(this) || (s[e.getAttribute("data-astro-template") || "default"] = e.innerHTML, e.remove());
+                                    for (const e of r) !e.closest(this.tagName) ? .isSameNode(this) || (s[e.getAttribute("name") || "default"] = e.innerHTML);
+                                    const o = this.hasAttribute("props") ? JSON.parse(this.getAttribute("props"), n) : {};
+                                    this.hydrator(this)(this.Component, o, s, {
+                                        client: this.getAttribute("client")
+                                    }), this.removeAttribute("ssr"), window.removeEventListener("astro:hydrate", this.hydrate), window.dispatchEvent(new CustomEvent("astro:hydrate"))
+                                }
+                            }
+                            connectedCallback() {
+                                !this.hasAttribute("await-children") || this.firstChild ? this.childrenConnectedCallback() : new MutationObserver((r, s) => {
+                                    s.disconnect(), this.childrenConnectedCallback()
+                                }).observe(this, {
+                                    childList: !0
+                                })
+                            }
+                            async childrenConnectedCallback() {
+                                window.addEventListener("astro:hydrate", this.hydrate), await
+                                import (this.getAttribute("before-hydration-url"));
+                                const r = JSON.parse(this.getAttribute("opts"));
+                                Astro[this.getAttribute("client")](async() => {
+                                    const s = this.getAttribute("renderer-url"),
+                                        [i, {
+                                            default: o
+                                        }] = await Promise.all([
+                                            import (this.getAttribute("component-url")), s ?
+                                            import (s) : () => () => {}
+                                        ]),
+                                        e = this.getAttribute("component-export") || "default";
+                                    if (!e.includes(".")) this.Component = i[e];
+                                    else {
+                                        this.Component = i;
+                                        for (const c of e.split(".")) this.Component = this.Component[c]
+                                    }
+                                    return this.hydrator = o, this.hydrate
+                                }, r, this)
+                            }
+                            attributeChangedCallback() {
+                                this.hydrator && this.hydrate()
+                            }
+                        }, a.observedAttributes = ["props"], a))
+                    }
+                </script>
+                <astro-island uid="Z1dqSgI" component-url="SidebarToggle.eb6c0f98.js" component-export="default" renderer-url="client.0d4c82be.js" props="{&quot;class&quot;:[0,&quot;astro-VASKBSTH&quot;]}" ssr="" client="idle" before-hydration-url="data:text/javascript;charset=utf-8,//[no before-hydration script]"
+                    opts="{&quot;name&quot;:&quot;SidebarToggle&quot;,&quot;value&quot;:true}" await-children=""><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-island>
+            </div>
+            <div class="logo flex astro-VASKBSTH">
+                <a href="introduction.html" class="astro-VASKBSTH">
+                    <img src="logo.png" class="astro-VASKBSTH">
+                </a>
+            </div>
+            <div style="flex-grow: 1;" class="astro-VASKBSTH"></div>
+        </nav>
+    </header>
+
+
+    <main class="layout astro-GGT7YLBK">
+        <aside id="grid-left" class="grid-sidebar astro-GGT7YLBK" title="Site Navigation">
+            <nav aria-labelledby="grid-left" class="astro-V64DYODR">
+                <ul class="nav-groups astro-V64DYODR">
+                    <li class="astro-V64DYODR">
+                        <div class="nav-group astro-V64DYODR">
+                            <h2 class="nav-group-title astro-V64DYODR">Documentation</h2>
+                            <ul class="astro-V64DYODR">
+                                <li class="nav-link astro-V64DYODR">
+                                    <a href="introduction.html" aria-current="false" class="astro-V64DYODR">
+									Introduction
+								</a>
+                                </li>
+                                <li class="nav-link astro-V64DYODR">
+                                    <a href="installation.html" aria-current="page" class="astro-V64DYODR">
+									Installation
+								</a>
+                                </li>
+                                <li class="nav-link astro-V64DYODR">
+                                    <a href="translation.html" aria-current="false" class="astro-V64DYODR">
+									Translation
+								</a>
+                                </li>
+                                <li class="nav-link astro-V64DYODR">
+                                    <a href="tools.html" aria-current="false" class="astro-V64DYODR">
+									Tool Settings
+								</a>
+                                </li>
+                                <li class="nav-link astro-V64DYODR">
+                                    <a href="important-notes.html" aria-current="false" class="astro-V64DYODR">
+									Important Notes
+								</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    var target = document.querySelector('[aria-current="page"]');
+                    if (target && target.offsetTop > window.innerHeight - 100) {
+                        document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+                    }
+                });
+            </script>
+
+
+        </aside>
+        <div id="grid-main" class="astro-GGT7YLBK">
+            <article id="article" class="content astro-PAZFISYY">
+                <section class="main-section astro-PAZFISYY">
+                    <h1 class="content-title astro-PAZFISYY" id="overview">Installation</h1>
+                    <nav class="block sm:hidden astro-PAZFISYY">
+                        <script>
+                            (self.Astro = self.Astro || {}).media = (s, a) => {
+                                const t = async() => {
+                                    await (await s())()
+                                };
+                                if (a.value) {
+                                    const e = matchMedia(a.value);
+                                    e.matches ? t() : e.addEventListener("change", t, {
+                                        once: !0
+                                    })
+                                }
+                            };
+                        </script>
+                        <astro-island uid="1fMCCr" component-url="TableOfContents.06883766.js" component-export="default" renderer-url="client.0d4c82be.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;step-1---license-verification\&quot;],\&quot;text\&quot;:[0,\&quot;Step 1 - License Verification\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;step-2---database-setup\&quot;],\&quot;text\&quot;:[0,\&quot;Step 2 - Database Setup\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;step-3---admin-setup\&quot;],\&quot;text\&quot;:[0,\&quot;Step 3 - Admin Setup\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;facing-any-problems\&quot;],\&quot;text\&quot;:[0,\&quot;Facing any problems?\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-PAZFISYY&quot;]}"
+                            ssr="" client="media" before-hydration-url="data:text/javascript;charset=utf-8,//[no before-hydration script]" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(max-width: 50em)&quot;}" await-children="">
+                            <h2 class="heading">On this page</h2>
+                            <ul>
+                                <li class="heading-link depth-2"><a href="#overview">Overview</a></li>
+                                <li class="heading-link depth-2"><a href="#step-1---license-verification">Step 1 - License Verification</a></li>
+                                <li class="heading-link depth-2"><a href="#step-2---database-setup">Step 2 - Database Setup</a></li>
+                                <li class="heading-link depth-2"><a href="#step-3---admin-setup">Step 3 - Admin Setup</a></li>
+                            </ul>
+                        </astro-island>
+                    </nav>
+                    <p><strong>This chapter will show you how to install the script onto your server.</strong></p>
+                    <p>When you upload the contents of <code>upload.zip</code> into the public directory of your server and visit your website, You should see the BitFlan Installer.</p>
+                    <p>The Installer is a wizard that helps you setup the script onto your website.</p>
+                    <p>Before you can continue with the installation process, You must make sure that your server matches these requirements:</p>
+                    <ul>
+                        <li>PHP 8.x</li>
+                        <li>MySQL Database</li>
+                        <li>Storage &#x26; Public Directories writable.</li>
+                        <li>BCMath PHP Extension</li>
+                        <li>Ctype PHP Extension</li>
+                        <li>Fileinfo PHP Extension</li>
+                        <li>JSON PHP Extension</li>
+                        <li>Mbstring PHP Extension</li>
+                        <li>OpenSSL PHP Extension</li>
+                        <li>PDO MySQL PHP Extension</li>
+                        <li>Tokenizr PHP Extension</li>
+                        <li>XML PHP Extension</li>
+                        <li>cURL PHP Extension</li>
+                        <li>ZIP PHP Optional</li>
+                    </ul>
+                    <h2 id="step-1---license-verification">Step 1 - License Verification</h2>
+                    <p>Before you can install the script onto your website, you must verify your license. To verify your license, you need your envato purchase code. <a target="_blank" href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-">Click Here</a>                        if you don’t know where to find your purchase code.</p>
+                    <p><strong>Note: If you are installing on a local machine or If you have an extended license, You do NOT have to link your domain name. Simply type in your purchase code while installing and It will work</strong></p>
+                    <p>After you find your purchase code, You must link your purchase code to a Domain Name by <a target="_blank" href="https://api.bitflan.com/activate">Clicking Here</a>. Make sure to enter your Domain Name without the HTTPS / WWW or any
+                        protocol (i.e mywebsite.com)</p>
+                    <p>After attaching the domain to your purchase code, Go back to the installer, paste your purchase code and click on the Verify button to continue. If all is done properly, you should now move onto the database section.</p>
+                    <h2 id="step-2---database-setup">Step 2 - Database Setup</h2>
+                    <p>You need a MySQL database for use with this project. We recommend creating a new Database. After creating the database, you just need to fill out the respective details in the installer.</p>
+                    <ul>
+                        <li>Database Name in the <strong>Name</strong> field.</li>
+                        <li>Database Port in the <strong>Port</strong> field.</li>
+                        <li>Database Host in the <strong>Host</strong> field. (Usually localhost)</li>
+                        <li>Database Username in the Username field.</li>
+                        <li>Database Password in the Password field.</li>
+                    </ul>
+                    <h2 id="step-3---admin-setup">Step 3 - Admin Setup</h2>
+                    <p>After setting up the database, you must create your admin user. Fill out the respective details and make sure your website’s URL is valid. Click on the Button to complete the installation process.</p>
+                    <p>If all goes well, you will be redirected to the Admin Panel. Login with your newly created account and enjoy the product.</p>
+                    <h4 id="facing-any-problems">Facing any problems?</h4>
+                    <p>If you face any issues with the installation process or need help with something, Please contact us at <a href="https://support.bitflan.com" target="_blank">Our Support Desk</a></p>
+                </section>
+                <nav class="block sm:hidden astro-PAZFISYY">
+
+                    <ul class="astro-GTNM5BWF">
+
+
+                    </ul>
+
+
+                </nav>
+            </article>
+
+
+        </div>
+        <aside id="grid-right" class="grid-sidebar astro-GGT7YLBK" title="Table of Contents">
+            <nav class="sidebar-nav astro-VFRMDPNV" aria-labelledby="grid-right">
+                <div class="sidebar-nav-inner astro-VFRMDPNV">
+                    <astro-island uid="Z1Is8zV" component-url="TableOfContents.06883766.js" component-export="default" renderer-url="client.0d4c82be.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;step-1---license-verification\&quot;],\&quot;text\&quot;:[0,\&quot;Step 1 - License Verification\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;step-2---database-setup\&quot;],\&quot;text\&quot;:[0,\&quot;Step 2 - Database Setup\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;step-3---admin-setup\&quot;],\&quot;text\&quot;:[0,\&quot;Step 3 - Admin Setup\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;facing-any-problems\&quot;],\&quot;text\&quot;:[0,\&quot;Facing any problems?\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-VFRMDPNV&quot;]}"
+                        ssr="" client="media" before-hydration-url="data:text/javascript;charset=utf-8,//[no before-hydration script]" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(min-width: 50em)&quot;}" await-children="">
+                        <h2 class="heading">On this page</h2>
+                        <ul>
+                            <li class="heading-link depth-2"><a href="#overview">Overview</a></li>
+                            <li class="heading-link depth-2"><a href="#step-1---license-verification">Step 1 - License Verification</a></li>
+                            <li class="heading-link depth-2"><a href="#step-2---database-setup">Step 2 - Database Setup</a></li>
+                            <li class="heading-link depth-2"><a href="#step-3---admin-setup">Step 3 - Admin Setup</a></li>
+                        </ul>
+                    </astro-island>
+
+                    <ul class="astro-GTNM5BWF">
+
+
+                    </ul>
+
+
+                </div>
+            </nav>
+
+
+        </aside>
+    </main>
+</body>
+
+</html>

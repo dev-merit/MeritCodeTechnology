@@ -1,0 +1,1 @@
+<img src="<?php echo e(asset('/static-backend/logo.webp')); ?>" alt="Logo" class="h-10"><?php /**PATH /home/awsstart/domains/meritcodetechnology.com/public_html/resources/views/vendor/filament/components/brand.blade.php ENDPATH**/ ?>

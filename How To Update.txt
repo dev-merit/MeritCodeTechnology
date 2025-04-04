@@ -1,0 +1,5 @@
+1. Upload the file "upload.zip" onto the root of your website. The file itself, NOT the contents. (Usually the public_html folder)
+2. Login to your Admin Panel.
+3. Go to the "Update" page.
+4. Click the Update button and wait for the page to refresh.
+5. Your website should now be updated to the latest version.
