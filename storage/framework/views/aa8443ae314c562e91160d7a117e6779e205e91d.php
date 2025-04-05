@@ -183,18 +183,19 @@
 			</div>
                <style>
   .Social-container {
-    background-color: rgb(76, 63, 242);
+    background-color: rgb(78, 96, 255);
     border-radius: 22px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
     padding: 1rem;
+    background: linear-gradient(25deg, #4e5efef2 80%, #000000fc)
   }
 
   .Social-row {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     row-gap: 0.5rem;
   }
@@ -210,7 +211,7 @@
   .Social-link {
     position: relative;
     width: 115px;
-    height: 60px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,8 +222,7 @@
   }
 
   .Social-link img {
-    width: 100%;
-    height: 100%;
+
     object-fit: contain;
     transition: opacity 0.3s ease;
   }
@@ -295,7 +295,7 @@
     align-items: center;
   }
 
-  .Social-learn h5 {
+  .Social-learn h6 {
     color: white;
     text-align: center;
     margin-bottom: 1rem;
@@ -311,19 +311,19 @@
 <div class="Social-container">
   <div class="Social-row">
     <a href="https://www.facebook.com/Meritcodetech/" target="_blank" class="Social-link" data-site="facebook">
-      <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new" />
+      <img width="24" height="24" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new" />
       <div class="Social-text">Facebook</div>
     </a>
     <a href="https://x.com/Meritcode_tech" target="_blank" class="Social-link" data-site="x">
-      <img width="50" height="50" src="https://img.icons8.com/ios/50/twitterx--v2.png" alt="twitterx" />
+      <img width="25" height="25" src="https://img.icons8.com/ios/50/twitterx--v2.png" alt="twitterx" />
       <div class="Social-text">X</div>
     </a>
     <a href="https://www.youtube.com/@MeritCodeTechPVTLTD" target="_blank" class="Social-link" data-site="youtube">
-      <img width="48" height="48" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube" />
+      <img width="24" height="24" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube" />
       <div class="Social-text">YouTube</div>
     </a>
     <a href="https://www.linkedin.com/company/merit-code-tech/" target="_blank" class="Social-link" data-site="linkedin">
-      <img width="50" height="50" src="https://img.icons8.com/fluency/50/linkedin.png" alt="linkedin" />
+      <img width="25" height="25" src="https://img.icons8.com/fluency/50/linkedin.png" alt="linkedin" />
       <div class="Social-text">LinkedIn</div>
     </a>
     <a href="https://www.quora.com/profile/Merit-Code-Tech-PVT-LTD" target="_blank" class="Social-link" data-site="quora">
@@ -332,14 +332,14 @@
     </a>
   </div>
   <div class="Social-learn">
-    <h5>Learn more about us</h5>
+    <h6>Learn more about us</h6>
     <div class="Social-row-second">
       <a href="https://www.crunchbase.com/organization/merit-code-tech" target="_blank" class="Social-link" data-site="crunchbase">
-        <img width="50" height="50" src="<?php echo e(asset('images/cb.svg')); ?>" alt="CrunchBase" />
+        <img width="25" height="25" src="<?php echo e(asset('images/cb.svg')); ?>" alt="CrunchBase" />
         <div class="Social-text">CrunchBase</div>
       </a>
       <a href="https://www.f6s.com/merit-code-tech" target="_blank" class="Social-link" data-site="f6s">
-        <img width="50" height="50" src="<?php echo e(asset('images/f6s.svg')); ?>" alt="F6S" />
+        <img width="25" height="25" src="<?php echo e(asset('images/f6s.svg')); ?>" alt="F6S" />
         <div class="Social-text">F6S</div>
       </a>
     </div>

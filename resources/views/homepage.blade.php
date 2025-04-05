@@ -9,7 +9,7 @@
             <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; line-height: 1.2;">Transform Your Business with Next-Gen <span style="color: #facc15;">AI tools</span></h1>
             <p style="font-size: 1.25rem; margin-bottom: 32px; color: #e0e7ff;">Enhance productivity and scale your business with our intelligent AI tools that automate, optimize, and innovate.</p>
             <div style="display: flex; justify-content: center; gap: 16px;">
-                <a href="#tools" style="background-color: white; color: #4f46e5; padding: 14px 28px; border-radius: 9999px; font-weight: 600; text-decoration: none; transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Start Today</a>
+                <a href="/contact" style="background-color: white; color: #4f46e5; padding: 14px 28px; border-radius: 9999px; font-weight: 600; text-decoration: none; transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Get A Quotation</a>
                 <a href="#about" style="border: 2px solid white; color: white; padding: 14px 28px; border-radius: 9999px; text-decoration: none; transition: 0.3s ease;" onmouseover="this.style.backgroundColor='white'; this.style.color='#4f46e5';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">Try Now</a>
             </div>
         </div>
@@ -94,7 +94,7 @@
 <div id="cta" style="padding: 64px 16px; text-align: center; background-color: #4F46E5; color: white;">
     <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 16px;">Upgrade with AI</h2>
     <p style="font-size: 1.25rem; margin-bottom: 24px;">Streamline workflows and maximize productivity instantly with our Merit Code Tech Tools</p>
-    <a href="#signup" style="background-color: white; color: #4F46E5; padding: 14px 28px; border-radius: 9999px; font-weight: 600; text-decoration: none; font-size: 1.1rem;">Get Started</a>
+    <a href="/auth/register" style="background-color: white; color: #4F46E5; padding: 14px 28px; border-radius: 9999px; font-weight: 600; text-decoration: none; font-size: 1.1rem;">Get Started</a>
 </div>
 
 <div id="testimonial" style="padding: 64px 16px; background: linear-gradient(135deg, #F3F4F6, #E5E7EB); text-align: center;">
